@@ -1,0 +1,19 @@
+{
+ "name": "Универсал-Аэро",
+ "short_name": "Универсал-Аэро",
+ "icons": [
+  {
+   "src": "assets/icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "assets/icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ],
+ "theme_color": "#121417",
+ "background_color": "#121417",
+ "display": "browser"
+}

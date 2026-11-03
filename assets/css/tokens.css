@@ -1,0 +1,170 @@
+/* ============================================================
+   УНИВЕРСАЛ-АЭРО · «ПЕРРОН»
+   tokens.css — шрифты, цвет, типографика, сетка (разделы 4–6 ТЗ)
+   ============================================================ */
+
+@font-face {
+  font-family: "Tektur";
+  font-style: normal;
+  font-weight: 400 900;
+  font-stretch: 75% 100%;
+  font-display: swap;
+  src: url("../fonts/tektur-400900-w75100%-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Tektur";
+  font-style: normal;
+  font-weight: 400 900;
+  font-stretch: 75% 100%;
+  font-display: swap;
+  src: url("../fonts/tektur-400900-w75100%-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/golos-400-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/golos-400-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/golos-500-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/golos-500-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/golos-600-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/golos-600-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/jetbrains-400-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/jetbrains-400-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/jetbrains-600-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/jetbrains-600-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  /* Асфальт перрона — основной тёмный */
+  --asphalt-950: #0D0F11;
+  --asphalt-900: #121417;
+  --asphalt-800: #1B1E22;
+  --asphalt-700: #2A2E34;
+  --asphalt-500: #5B6068;
+
+  /* Бетон — основной светлый */
+  --concrete-50:  #F4F2EC;
+  --concrete-100: #E9E6DE;
+  --concrete-200: #D8D4CA;
+  --concrete-400: #A29E94;
+
+  /* Сигнальный жёлтый — главный акцент */
+  --signal-500: #FFC72C;
+  --signal-600: #E6A800;
+  --signal-100: #FFF1C7;
+
+  /* Кобальт — фирменный синий #0039A6 */
+  --cobalt-700: #0039A6;
+  --cobalt-500: #1E5BD8;
+  --cobalt-200: #BFD0F5;
+
+  /* Красный запрещающих знаков — только ошибки и «обязательно» */
+  --stop-600: #D2261C;
+
+  /* Шрифтовые стеки (с резервными) */
+  --font-display: "Tektur", "Arial Narrow", sans-serif-condensed, sans-serif;
+  --font-body: "Golos Text", "Segoe UI", "PT Sans", sans-serif;
+  --font-mono: "JetBrains Mono", Consolas, "Courier New", monospace;
+
+  /* Типографская шкала (fluid, clamp) — раздел 5.1 */
+  --fs-mega: clamp(64px, 11vw, 176px);
+  --fs-h1: clamp(44px, 6vw, 96px);
+  --fs-h2: clamp(32px, 4vw, 60px);
+  --fs-h3: clamp(22px, 2vw, 30px);
+  --fs-body-l: clamp(18px, 1.3vw, 21px);
+  --fs-body: 17px;
+  --fs-label: 13px;
+  --fs-data: clamp(40px, 5vw, 80px);
+
+  /* Сетка и отступы — раздел 6 */
+  --container: 1440px;
+  --gutter-x: clamp(20px, 4vw, 64px);
+  --section-y: clamp(96px, 12vw, 192px);
+  --unit: 8px;
+
+  /* Форма */
+  --radius: 0;
+  --radius-s: 2px;
+  --shadow-hard: 0 8px 0 var(--asphalt-950);
+  --line-dark: 1px solid var(--asphalt-700);
+  --line-light: 1px solid var(--concrete-200);
+
+  /* Движение — раздел 7 */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.1, 1);
+  --t-fast: 160ms;
+  --t-med: 220ms;
+  --t-slow: 600ms;
+
+  /* Header */
+  --header-h: 88px;
+
+  color-scheme: dark light;
+}
